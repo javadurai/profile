@@ -62,8 +62,8 @@ export default class App extends React.Component {
                   <hr />
                   <Projects data={data.projects} />
                   <hr />
-                  <AcademicDetails data={data.academic} />
-                  <hr />
+                  {/* <AcademicDetails data={data.academic} />
+                  <hr /> */}
                   <Achievements data={data.achievements} />
                 </div>
                 <SocialMediaLinks data={data.social} />
