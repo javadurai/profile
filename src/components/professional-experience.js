@@ -6,7 +6,7 @@ class ProfessionalExperience extends React.Component {
     if (data === undefined) return <div />;
 
     return (
-      <div className="card mb-3 d-md-block">
+      <div className="card mb-3 d-md-block bg-light">
         <div className="card-body text-center">
           <div className="professional-experience">
             <h2 className="text-uppercase text-main text-underlined">

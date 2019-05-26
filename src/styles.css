@@ -21,3 +21,7 @@ body {
 .bg-main {
   background-color: #4b545c !important;
 }
+
+.bg-light-extra {
+  background-color: #d3d4d5 !important;
+}

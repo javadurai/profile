@@ -6,7 +6,7 @@ export default class ContactDetails extends React.Component {
     if (data === undefined) return <div />;
 
     return (
-      <div class="card mb-3">
+      <div class="card mb-3 bg-light">
         <div class="card-body text-center">
           <div className="Address">
             <h2 className="text-uppercase text-main text-underlined">
