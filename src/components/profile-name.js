@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import DownloadProfileBtn from "./download-profile-btn";
 
 export default class ProfileName extends React.Component {
   render() {
@@ -18,7 +18,7 @@ export default class ProfileName extends React.Component {
           </div>
         </div>
         <div className="float-right col-sm-1">
-          {/* <DownloadProfileBtn /> */}
+          <DownloadProfileBtn />
         </div>
         <div className="clearfix" />
       </div>

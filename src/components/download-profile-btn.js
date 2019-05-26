@@ -20,13 +20,12 @@ export default class DownloadProfileBtn extends React.Component {
 
   render() {
     return (
-      <button
-        type="button"
+      <a
         className="btn btn-info bg-light text-danger float-right ml-2 mt-2 hidden-print"
-        onClick={this.printThisDocument}
+        href="Resume.pdf"
       >
         <i class="fa fa-file-pdf-o fa-2x" />
-      </button>
+      </a>
     );
   }
 }
