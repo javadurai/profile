@@ -1,6 +1,4 @@
 import React from "react";
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import ProfileSummary from "./components/profile-summary";
 import ProfessionalExperience from "./components/professional-experience";
 import Projects from "./components/projects";
@@ -12,37 +10,10 @@ import ProfileImage from "./components/profile-image";
 import SocialMediaLinks from "./components/social-media-links";
 import FacebookComments from "./components/facebook-comments";
 
-import "bootstrap";
-import "bootstrap/dist/css/bootstrap.min.css";
-import "font-awesome/css/font-awesome.css";
-import axios from "axios";
-
-import "./styles.css";
-
-export default class App extends React.Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      resume: {}
-    };
-  }
-
-  componentWillMount() {
-    axios
-      .get(
-        `https://raw.githubusercontent.com/javadurai/my-resume-data/master/data.json`
-      )
-      .then(res => {
-        const resume = res.data;
-        this.setState({ resume });
-      });
-  }
-
+export default class Home extends React.Component {
   render() {
-    const data = this.state.resume;
-    if (data === undefined) {
-      return <div className="container" />;
-    }
+    const data = this.props.data;
+    if (data === undefined) return <div />;
 
     return (
       <div>
@@ -77,6 +48,3 @@ export default class App extends React.Component {
     );
   }
 }
-
-const rootElement = document.getElementById("root");
-ReactDOM.render(<App />, rootElement);

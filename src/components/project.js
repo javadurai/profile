@@ -8,7 +8,7 @@ export default class Project extends React.Component {
     return (
       <div className="project-detail mb-3">
         <div className="card">
-          <h5 class="card-header bg-light-extra">{data.title}</h5>
+          <h5 class="card-header bg-light-extra text-main">{data.title}</h5>
           <div className="card-body">
             <table>
               <tr>

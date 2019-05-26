@@ -1,5 +1,5 @@
 import React from "react";
-import DownloadProfileBtn from "./download-profile-btn";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 export default class ProfileName extends React.Component {
   render() {
