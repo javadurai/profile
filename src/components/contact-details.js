@@ -13,25 +13,29 @@ export default class ContactDetails extends React.Component {
               Contact
             </h2>
             <address>
-              {data.address}
-              <br />
+              {data.address.map(line => {
+                return (
+                  <span>
+                    {line}
+                    <br />
+                  </span>
+                );
+              })}
               <span>
-                <i class="fa fa-phone-square" />{" "}
                 <a
                   className="text-secondary text-decoration-none"
                   href={"tel:" + data.mobile}
                 >
-                  {data.mobile}
+                  <i class="fa fa-phone-square" /> {data.mobile}
                 </a>
               </span>
               <br />
               <span>
-                <i class="fa fa-envelope-square" />{" "}
                 <a
                   className="text-secondary text-decoration-none"
                   href={"mailto:" + data.email}
                 >
-                  {data.email}
+                  <i class="fa fa-envelope-square" /> {data.email}
                 </a>
               </span>
             </address>
